@@ -1,0 +1,168 @@
+.navigation {
+  color: white;
+  width: 100%;
+  padding-inline: 3rem;
+  height: 5rem;
+  margin: auto;
+  position: absolute;
+  top: 30px;
+  z-index: 100;
+  @media (width <= 1068px){
+    top: 0px;
+    padding-right: 0;
+  }
+  @media (width <= 768px) {
+    top: 30px;  
+  }
+  .ham-menu{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    padding-top: 10%;
+    @media (width <= 768px) {
+      display: flex;
+    }
+    .link{
+      margin-block-end: 2rem;
+      font-size: 2rem;text-decoration: none;
+      &:active {
+        color: white;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        background-color: transparent;
+        transition: all 0.2s ease-in-out;
+      }
+      &:hover {
+        &::after {
+          width: 100%;
+          background-color: white;
+        }
+      }
+    }
+    .active{
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        background-color: white !important;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+  .nav-content {
+    display: flex;
+    align-items: center;
+    hr {
+      width: 50%;
+      height: 0.5px;
+      @media (width <= 1068px) {
+        width: 20%;
+      }
+
+      @media (width <= 768px) {
+        width: 20%;
+      }
+
+      @media (width <= 640px) {
+        width: 60%;
+      }
+    }
+
+    .links-container {
+      background-color: rgba(62, 62, 66, 0.358);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-around;
+      padding: 0 5rem;
+      width: 50%;
+
+      @media (width <= 1068px) {
+        flex: 1;
+        padding: 0 1rem;
+      }
+
+      @media (width <= 768px) {
+        width: 50%;
+      
+        padding: 0 1rem;
+      }
+
+      @media (width <= 640px) {
+        display: none;
+        
+      }
+      align-items: center;
+      .link {
+        padding-block: 2.5rem;
+        color: white;
+        height: 100%;
+        position: relative;
+        text-decoration: none;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        letter-spacing: 1.5px;
+        font-weight: lighter;
+        text-transform: uppercase;
+        font-size: 1dvw;
+        @media (width <= 1080px) {
+          font-size: 12px;
+        }
+        span {
+          font-weight: bold;
+          @media (width <= 1068px) {
+            display: none;
+          }
+        }
+        &:active {
+          color: white;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 3px;
+          bottom: 0;
+          left: 0;
+          z-index: 10;
+          background-color: transparent;
+          transition: all 0.2s ease-in-out;
+        }
+        &:hover {
+          &::after {
+            width: 100%;
+            background-color: white;
+          }
+        }
+      }
+      .active{
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 3px;
+          bottom: 0;
+          left: 0;
+          z-index: 10;
+          background-color: white !important;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+}
+.current {
+  background: #000 !important;
+}

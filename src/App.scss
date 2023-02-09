@@ -1,0 +1,48 @@
+
+.App {
+  position: relative;
+}
+.underline-hover {
+  position: relative;
+  &:active {
+    width: 100%;
+    color: white;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+      background-color: white;
+    }
+  }
+}
+
+.title {
+  font-family: 'Barlow Condensed', serif !important;
+  font-weight: 100;
+  color: white;
+  letter-spacing: 3.38px;
+  
+  span {
+    font-weight: bold;
+    color: rgb(100, 118, 144);
+  }
+  @media (width <= 1068px) {
+    font-size: 2rem;
+    padding-left: 3rem;
+  }
+}
+.header{
+  font-family: 'Bellefair', serif !important;
+  text-transform: uppercase;
+}

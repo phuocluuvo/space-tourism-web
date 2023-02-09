@@ -1,0 +1,208 @@
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.technology {
+  color: #fff;
+  min-width: 100vw;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-height: 100vh;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-right: 0 !important;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: url("../../assets/technology/background-technology-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (width <= 1068px) {
+  .technology {
+    padding-inline: 0 !important;
+    background-image: url("../../assets/technology/background-technology-tablet.jpg");
+  }
+}
+@media (width <= 768px) {
+  .technology {
+    background-image: url("../../assets/technology/background-technology-mobile.jpg");
+  }
+}
+.technology .tabs {
+  display: flex;
+  justify-content: center;
+}
+@media (width <= 1068px) {
+  .technology .tabs > div {
+    flex-direction: column;
+  }
+}
+.technology .tabs div {
+  display: flex;
+}
+.technology .tabs .portrait {
+  margin: auto;
+  aspect-ratio: 1/1;
+}
+@media (width <= 1068px) {
+  .technology .tabs .portrait {
+    display: none;
+  }
+}
+@media (width <= 768px) {
+  .technology .tabs .portrait {
+    width: 20rem;
+  }
+}
+.technology .tabs .landscape {
+  display: none;
+  width: 100%;
+}
+@media (width <= 1068px) {
+  .technology .tabs .landscape {
+    display: inline;
+  }
+}
+.technology .tabs .tab-btn-container {
+  display: flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  justify-content: space-around;
+  height: 500px;
+  margin: auto;
+}
+.technology .tabs .tab-btn-container p {
+  font-family: "Bellefair", serif;
+}
+@media (width <= 1280px) {
+  .technology .tabs .tab-btn-container {
+    width: 100%;
+    max-width: unset;
+    justify-content: center;
+  }
+}
+@media (width <= 1068px) {
+  .technology .tabs .tab-btn-container {
+    width: 50%;
+    max-width: unset;
+    flex-direction: row;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+@media (width <= 768px) {
+  .technology .tabs .tab-btn-container {
+    width: 80%;
+    max-width: unset;
+  }
+}
+@media (width <= 640px) {
+  .technology .tabs .tab-btn-container {
+    width: 100%;
+  }
+}
+.technology .tabs .tab-btn-container .tab-btn {
+  position: relative;
+  color: white;
+  border: none;
+  aspect-ratio: 1/1;
+  font-size: 20px;
+  padding-block: 1rem;
+  width: 80px;
+  height: 80px;
+  border-radius: 99999px;
+  border: 1px solid white;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+.technology .tabs .tab-btn-container .tab-btn.active {
+  color: black;
+  background-color: white !important;
+}
+.technology .tabs .tab-btn-container .tab-btn:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.2s ease-in-out;
+}
+@media (width <= 1280px) {
+  .technology .tabs .tab-btn-container .tab-btn {
+    width: 60px;
+    height: 60px;
+    margin: 1rem;
+  }
+}
+.technology .tabs .tab-content {
+  display: flex;
+  flex-direction: row;
+  padding-block: 2rem;
+}
+@media (width <= 1068px) {
+  .technology .tabs .tab-content {
+    flex-direction: column-reverse;
+  }
+}
+.technology .tabs .tab-content .tab-content_content {
+  display: flex;
+  padding-inline: 10rem;
+  flex-direction: column;
+  max-width: 60%;
+  margin: auto;
+}
+@media (width <= 1280px) {
+  .technology .tabs .tab-content .tab-content_content {
+    width: 100%;
+    max-width: unset;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (width <= 1068px) {
+  .technology .tabs .tab-content .tab-content_content {
+    width: 100%;
+    justify-content: unset;
+    align-content: unset;
+    text-align: left;
+    max-width: unset;
+  }
+}
+@media (width <= 768px) {
+  .technology .tabs .tab-content .tab-content_content {
+    width: 80%;
+    max-width: unset;
+  }
+}
+@media (width <= 640px) {
+  .technology .tabs .tab-content .tab-content_content {
+    width: 100%;
+  }
+}
+.technology .tabs .tab-content .tab-content_content h1 {
+  font-weight: 100;
+  font-size: 4dvw;
+  text-transform: uppercase;
+}
+@media (width <= 1068px) {
+  .technology .tabs .tab-content .tab-content_content h1 {
+    font-size: 5dvw;
+  }
+}
+.technology .tabs .tab-content .tab-content_content h3 {
+  font-family: "Cambria, Cochin, Georgia, Times, " Times New Roman "," serif;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.technology .tabs .tab-content .tab-content_content h4 {
+  line-height: 3rem;
+}
+@media (width <= 1068px) {
+  .technology .tabs .tab-content .tab-content_content h4 {
+    line-height: 2.2rem;
+  }
+}
+.technology .tabs .tab-content .tab-content_content p {
+  color: rgba(255, 255, 255, 0.648);
+}/*# sourceMappingURL=TechnologyPage.css.map */

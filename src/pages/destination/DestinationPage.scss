@@ -1,0 +1,190 @@
+.destination {
+  color: #fff;
+  min-width: 100vw;
+  width: fit-content;
+  min-height: 100vh;
+  height: fit-content;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  background-image: url("../../assets/destination/background-destination-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (width <= 768px) {
+    background-image: url("../../assets/destination/background-destination-tablet.jpg");
+  }
+
+  @media (width <= 640px) {
+    background-image: url("../../assets/destination/background-destination-mobile.jpg");
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+
+    @media (width <= 1068px) {
+      flex-direction: column;
+      height: fit-content;
+      width: fit-content;
+    }
+
+    @media (width <= 768px) {
+      flex-direction: column;
+      height: fit-content;
+    }
+
+    @media (width <= 640px) {
+    }
+    img {
+      margin: auto;
+      display: flex;
+      align-self: center;
+      aspect-ratio: 1/1;
+      animation: spin 60s infinite;
+      @keyframes spin {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @media (width <= 1068px) {
+      }
+
+      @media (width <= 768px) {
+        width: 20rem;
+      }
+
+      @media (width <= 640px) {
+      }
+    }
+    .tab-btn-container {
+      display: flex;
+      width: fit-content;
+      max-width: 50%;
+      margin: auto;
+      @media (width <= 1280px) {
+        width: 100%;
+        max-width: unset;
+      }
+
+      @media (width <= 1068px) {
+        width: 100%;
+        max-width: unset;
+      }
+
+      @media (width <= 768px) {
+        width: 60%;
+        max-width: unset;
+      }
+
+      @media (width <= 640px) {
+        width: 100%;
+      }
+      .tab-btn {
+        color: rgba(255, 255, 255, 0.586);
+        border: none;
+        flex: 1;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding-block: 1rem;
+        min-width: 80px;
+        background-color: transparent;
+        &.active::after {
+        
+          width: 100% !important;
+          background-color: white;
+        }
+        &.active{
+          color:white;
+        }
+        &:hover{
+          color:white;
+          transition: all 0.25s ease-in-out;
+        }
+      }
+    }
+    .tab-content {
+      padding-block: 2rem;
+      .tab-content_content {
+        display: flex;
+        flex-direction: column;
+        max-width: 60%;
+        margin: auto;
+        @media (width <= 1280px) {
+          width: 100%;
+          max-width: unset;
+        }
+        @media (width <= 1068px) {
+          width: 100%;
+          max-width: unset;
+        }
+
+        @media (width <= 768px) {
+          width: 80%;
+          max-width: unset;
+        }
+
+        @media (width <= 640px) {
+          width: 100%;
+        }
+        h1 {
+          font-family: serif;
+          font-weight: 100;
+          font-size: 10dvw;
+          @media (width <= 1068px) {
+            width: 100%;
+            text-align: center;
+            font-size: 15rem;
+            max-width: unset;
+          }
+          @media (width <= 768px) {
+            width: 100%;
+            font-size: 10rem;
+            max-width: unset;
+          }
+        }
+        p {
+          color: rgba(255, 255, 255, 0.648);
+          font-size: 2rem;
+          font-family: 'Barlow', serif;
+          font-weight: 200;
+          @media screen and (max-width: 1068px) {
+            font-size: 1.5rem;
+          }
+            
+          
+          @media (width <= 1068px) {
+            text-align: center;
+          }
+        }
+        hr {
+          margin: 2rem 0;
+        }
+        .container-bottom {
+          display: flex;
+          justify-content: space-between;
+          @media (width <= 1068px) {
+            width: 60%;
+            margin: auto;
+          }
+          h5 {
+            font-family: 'Barlow Condensed', sans-serif;
+            text-transform: uppercase;
+            font-weight: 100;
+          }
+          h3 {
+            font-weight: 100;
+            font-family: 'Bellefair', sans-serif;
+            font-size: 2.5dvw;
+            text-transform: uppercase;
+            @media (width <= 1068px) {
+              font-size: 3.5dvw;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}
