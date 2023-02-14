@@ -45,8 +45,8 @@
     {
       "name": "Douglas Hurley",
       "images": {
-        "png": "src/assets/crew/image-douglas-hurley.png",
-        "webp": "src/assets/crew/image-douglas-hurley.webp"
+        "png": "https://res.cloudinary.com/voluu/image/upload/v1676389113/space%20tourism%20website/image-douglas-hurley_moqt83.png",
+        "webp": "https://res.cloudinary.com/voluu/image/upload/v1676389114/space%20tourism%20website/image-douglas-hurley_ylukoe.webp"
       },
       "role": "Commander",
       "bio": "Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2."
@@ -54,8 +54,8 @@
     {
       "name": "Mark Shuttleworth",
       "images": {
-        "png": "https://res.cloudinary.com/voluu/image/upload/v1676389113/space%20tourism%20website/image-douglas-hurley_moqt83.png",
-        "webp": "https://res.cloudinary.com/voluu/image/upload/v1676389114/space%20tourism%20website/image-douglas-hurley_ylukoe.webp"
+        "png": "https://res.cloudinary.com/voluu/image/upload/v1676389114/space%20tourism%20website/image-mark-shuttleworth_vheoir.png",
+        "webp": "https://res.cloudinary.com/voluu/image/upload/v1676389113/space%20tourism%20website/image-mark-shuttleworth_elfpwi.webp"
       },
       "role": "Mission Specialist",
       "bio": "Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist."
