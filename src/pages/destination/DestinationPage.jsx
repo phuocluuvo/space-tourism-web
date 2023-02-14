@@ -41,10 +41,11 @@ function DestinationPage({ data }) {
             key={d.name}
             id={d.name}
             style={{
-             
+           
               padding: "3rem 5rem",
             }}
             className={`tab-content ${d.name}`}
+
           >
             <img src={d.images.png} alt={d.name} />
           </div>
